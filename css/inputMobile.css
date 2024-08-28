@@ -1124,3 +1124,112 @@ html{
 .nav-tabs>li>a:hover{
   background-color: transparent;
 }
+
+.SelectBoxes {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+ .SelectBoxes .select_wrap {
+  width: 100%;
+  margin: 15px auto;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.SelectBoxes .select_wrap > .Title {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+ .SelectBoxes .select_wrap > .Title span {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21.91px;
+  color: #1E1E1E;
+}
+ .SelectBoxes .select_wrap.active .default_option:before {
+  top: 25px;
+  transform: rotate(-225deg);
+}
+ .SelectBoxes .select_wrap .option {
+  display: flex;
+  align-items: center;
+}
+.SelectBoxes .select_wrap .option p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21.91px;
+  color: #1E1E1E;
+
+}
+ .SelectBoxes .select_wrap .option .icon {
+  background: url("https://i.imgur.com/oEZu0sK.png") no-repeat 0 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+ .SelectBoxes .select_wrap.active .select_ul {
+  display: block;
+}
+.SelectBoxes .select_wrap .select_ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  right: 0;
+  width: 90%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+  z-index: 2;
+} .SelectBoxes .select_wrap .select_ul li {
+  padding: 10px 1em;
+  cursor: pointer;
+}
+ .SelectBoxes .select_wrap .select_ul li:first-child:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+ .SelectBoxes .select_wrap .select_ul li:last-child:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+ .SelectBoxes .select_wrap .select_ul li:hover {
+  background: #9597dc1e;
+
+}
+ .SelectBoxes .default_option {
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #000000;
+}
+.SelectBoxes .default_option::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid;
+  border-color: transparent transparent #5D676E #5D676E;
+  transform: rotate(-45deg);
+}
+ .SelectBoxes .default_option > li {
+  padding: 15px ;
+  width: 95%;
+  margin: auto;
+}
+
+.Gallerypopup .Gnext svg,
+.Gallerypopup .Gprev svg{
+  width: 15px;
+}
