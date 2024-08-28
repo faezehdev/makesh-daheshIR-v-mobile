@@ -27,10 +27,11 @@ module.exports = {
     },
     colors: {
       'b1':'#1E293B',
+      'b2':'#475569',
       'b3':'#E4E4E7',
       'b4':'#FAFAFA',
       'b6': '#2E3192F3',
-      'b7':'#F37021',
+      'b7':'#2E3192',
       'b8': '#F26737',
       'b9': '#1E1E1E',
       'b10': '#D9D9D9',
@@ -40,7 +41,10 @@ module.exports = {
       'white': '#FFFFFF',
       'gray-500':'#64748B',
       'f':'#ffff',
-
+      'orange':'#F37021',
+      'orange1':'#E96C20',
+      'gray2':'#ECECEC'
+        
     },
     fontFamily: {
       'IRANSansWeb300': ['IRANSansWeb300', 'IRANSansWeb300'],
@@ -74,7 +78,9 @@ module.exports = {
         '37.97':'37.97px',
         '37.57':'37.57px',
         '31.03':'31.03px',
-
+        '28.17':'28.17px',
+        '18.78':'18.78px',
+         '20.25':'20.25px'
        
 
       },
