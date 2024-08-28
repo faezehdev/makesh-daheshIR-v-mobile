@@ -325,15 +325,7 @@ main.Home-Mobile .swiper-gallery .swiper-slide-next .IMG{
   -o-transform: translateY(1.5em);
 }
 
-.map svg path.hasBranch:hover {
-  cursor: pointer;
-  fill:#F26737;
-}
-.map svg path {
-  fill: #BCBDBD;
-  stroke: #fff;
-  transition: all 500ms;
-}
+
 .Rep-Lists li{
   transition: all .4s ease;
   -webkit-transition: all .4s ease;
