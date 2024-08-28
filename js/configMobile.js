@@ -1,5 +1,5 @@
-let OpBtn = document.querySelector('.DesktopHeader .Toggles')
-let Menu = document.querySelector('.DesktopHeader .Menu-Container')
+let OpBtn = document.querySelector('.MobileHeader .Toggles')
+let Menu = document.querySelector('.MobileHeader .Menu-Container')
 let ClBtn = document.querySelector('.Menu-Container .Close-Icon')
 OpBtn.addEventListener('click',()=>{
     Menu.classList.add('Open')
@@ -26,16 +26,16 @@ DropNavs.forEach(d=>{
      e.currentTarget.children[1].classList.toggle('openNav')
     })
 })
-let header = document.querySelector('header')
-window.addEventListener('scroll',(s)=>{
-    if(scrollY > 0){
-        header.classList.add('GoBottom')
-    }
-    else{
-        header.classList.remove('GoBottom')
-    }
+// let header = document.querySelector('header')
+// window.addEventListener('scroll',(s)=>{
+//     if(scrollY > 0){
+//         header.classList.add('GoBottom')
+//     }
+//     else{
+//         header.classList.remove('GoBottom')
+//     }
     
-})
+// })
 
 
 var host = {
@@ -128,7 +128,7 @@ function rendered(){
 }
 
    // SEARCH
-   let sBTN = document.querySelector('.DesktopHeader .searchIcon')
+   let sBTN = document.querySelector('.MobileHeader .searchIcon')
    let sCon = document.querySelector('.searchContainer')
    let sClose  = document.querySelector('.searchContainer .CloseSerch')
    let searchicon = document.querySelector('.searchContainer .sBTN')
