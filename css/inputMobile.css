@@ -6,7 +6,6 @@
     direction: rtl;
   }
 }
-
 @font-face {
   font-family: "YekanBakh400";
   src: url("../../_fonts/YekanBakh-Regular.eot");
@@ -70,12 +69,11 @@
 }
 @font-face {
   font-family: "IRANSansWeb400";
-  src: url("../../_fonts/IRANSansWebRegular.eot");
-  src: url("../../_fonts/IRANSansWebRegular.eot?#iefix")
+  src: url("../../_fonts/IRANSansFaNum-Regular.eot");
+  src: url("../../_fonts/IRANSansFaNum-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("../../_fonts/IRANSansWebRegular.woff") format("woff"),
-    url("../../_fonts/IRANSansWebRegular.woff2") format("woff2"),
-    url("../../_fonts/IRANSansWebRegular.ttf") format("truetype");
+    url("../../_fonts/IRANSansFaNum-Regular.woff") format("woff"),
+    url("../../_fonts/IRANSansFaNum-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -103,6 +101,10 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+* {
+  font-family: "IRANSansWeb400";
 }
 header .Menu-Container{
   background-size: 100%;
@@ -378,7 +380,7 @@ color: #1E1E1E;
 fill: #1E1E1E;
   }
 
-  main.aboutUS header,main.GalleryCat header,
+  main.aboutUS-Mobile  header,main.GalleryCat header,
   main.RepContainer header,
   main.GalleryList header
   main.GalleryShow header,
@@ -616,19 +618,19 @@ to {
   color: #1E1E1E;
   text-align: justify;
 }
-.aboutUS .swiper-pagination .swiper-pagination-bullet-active{
+.aboutUS-Mobile  .swiper-pagination .swiper-pagination-bullet-active{
   background-color: white;
 }
-.aboutUS .GallerySlider .swiper-pagination .swiper-pagination-bullet{
+.aboutUS-Mobile  .GallerySlider .swiper-pagination .swiper-pagination-bullet{
 width: 10px;
 height: 10px;
 }
 
-.aboutUS .GallerySlider .swiper-pagination{
+.aboutUS-Mobile  .GallerySlider .swiper-pagination{
   position: unset;
   width: fit-content;
 }
-main.aboutUS .GallerySlider svg{
+main.aboutUS-Mobile  .GallerySlider svg{
   width: 20px;
 
 }

@@ -63,8 +63,8 @@ let TimelineSwiper = new Swiper('.timeline__slides',{
 //   PARTNER SLIDER
 let PartnerSwiper = new Swiper('.swiper-partner',{
     speed: 1500,
-    slidesPerView:5,
-    spaceBetween: 40,
+    slidesPerView:2.1,
+    spaceBetween: 10,
     centeredSlides: true,
     loop:true,
     grabCursor:true,
@@ -73,9 +73,13 @@ let PartnerSwiper = new Swiper('.swiper-partner',{
 
 //  CERTIFICATE SLIDER
 let swiperCertificate= new Swiper(".swiper-certificate", {
-    slidesPerView:4,
+    slidesPerView:1,
     spaceBetween: 10,
-      speed:1000
+      speed:1000,
+      navigation: {
+        nextEl: ".Certificate-Container .swiper-button-next",
+        prevEl: ".Certificate-Container .swiper-button-prev",
+      },
   });  
   // ANIMATIONS
   let sections = document.querySelectorAll('.sec')
