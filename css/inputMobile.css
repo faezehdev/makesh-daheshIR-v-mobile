@@ -113,11 +113,11 @@ header .Menu-Container{
   top: 50%;
 }
 .BTN{
-  transform: translate(2.5em,-1.7em);
-  -webkit-transform: translate(2.5em,-1.7em);
-  -moz-transform: translate(2.5em,-1.7em);
-  -ms-transform: translate(2.5em,-1.7em);
-  -o-transform: translate(2.5em,-1.7em);
+  transform:translate(2.8em,-1.9em);
+  -webkit-transform:translate(2.8em,-1.9em);
+  -moz-transform:translate(2.8em,-1.9em);
+  -ms-transform:translate(2.8em,-1.9em);
+  -o-transform:translate(2.8em,-1.9em);
 }
 footer .btn-show{
   transform: translateY(1.4em);
@@ -147,8 +147,8 @@ stroke-width: 36px;
 background-color: #fff;
 color: #000;
 }
-.Home .swiper-pagination-bullet{
-  width: 110px !important;
+main.Home-Mobile .Section-1 .swiper-pagination-bullet{
+  width: 34px !important;
   background-color:transparent !important;
   display: flex !important;
   justify-content: center;
@@ -158,9 +158,9 @@ color: #000;
   opacity: 1 !important;
 }
 
-.Home .swiper-pagination-bullet .line{
+main.Home-Mobile .Section-1  .swiper-pagination-bullet .line{
   display: flex;
-  width: 110px;
+  width: 34px;
   height: 4px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -170,7 +170,7 @@ color: #000;
   background-color: #FFFFFF80;
   position: relative;
 }
-.Home .swiper-pagination-bullet-active  .line::before{
+main.Home-Mobile .Section-1 .swiper-pagination-bullet-active  .line::before{
   content: '';
   position: absolute;
   left: 0;
@@ -196,14 +196,17 @@ color: #000;
   }
   
 }
-.Home .swiper-pagination{
+main.Home-Mobile .Section-1 .swiper-pagination{
   width:  auto !important;
-  left: 5.8em !important  ;
+  left:1.5em !important  ;
   right: unset !important;
   height: unset !important;
-  margin-bottom: 10em;
+  margin-bottom: 3em;
 }
-.swiper-banner .swiper-slide img{
+main.Home-Mobile .swiper-banner .btn-show{
+  transform: translateY(4em);
+}
+main.Home-Mobile .swiper-banner .swiper-slide img{
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -216,7 +219,7 @@ color: #000;
   -ms-transition:all 1s cubic-bezier(.1,.6,.4,1) ;
   -o-transition:all 1s cubic-bezier(.1,.6,.4,1) ;
 }
-.swiper-banner .swiper-slide-active img{
+main.Home-Mobile .swiper-banner .swiper-slide-active img{
   transition:all 1s cubic-bezier(.1,.6,.4,1) ;
   -webkit-transition:all 1s cubic-bezier(.1,.6,.4,1) ;
   -moz-transition:all 1s cubic-bezier(.1,.6,.4,1) ;
@@ -230,7 +233,23 @@ color: #000;
   -o-transform: scale(1);
 }
 
-
+main.Home-Mobile .Section-4 .swiper-pagination-bullets .swiper-pagination-bullet{
+   background-color: #D9D9D9 !important;
+   transition:all .4s ;
+   -webkit-transition:all .4s ;
+   -moz-transition:all .4s ;
+   -ms-transition:all .4s ;
+   -o-transition:all .4s ;
+   opacity: 1 !important;
+}
+main.Home-Mobile .Section-4 .swiper-pagination-bullets .swiper-pagination-bullet-active{
+  background-color: #1E293B !important;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
 .cursor-follower {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.3);
@@ -267,25 +286,28 @@ color: #000;
 .Service .Top-S:hover svg{
   width: 30px;
 }
-main.Home .navigationBTN .swiper-button-prev,main.Home .navigationBTN .swiper-button-next{
+main.Home-Mobile .navigationBTN .swiper-button-prev,main.Home-Mobile .navigationBTN .swiper-button-next{
   position: static !important;
 margin: 0 !important;
 padding: 0 !important;
 width: 50% !important;
 display: flex !important;
 }
-main.Home .navigationBTN .swiper-button-prev::before,main.Home .navigationBTN .swiper-button-next::before,
-main.Home .navigationBTN .swiper-button-prev::after,main.Home .navigationBTN .swiper-button-next::after{
+main.Home-Mobile .navigationBTN .swiper-button-prev::before,main.Home-Mobile .navigationBTN .swiper-button-next::before,
+main.Home-Mobile .navigationBTN .swiper-button-prev::after,main.Home-Mobile .navigationBTN .swiper-button-next::after{
   content: none !important;
 }
-main.Home .swiper-gallery .swiper-slide-active .IMG{
+main.Home-Mobile .Section-9 .navigationBTN svg{
+  width: auto !important;
+}
+main.Home-Mobile.swiper-gallery .swiper-slide-active .IMG{
   transform:unset !important;
   -webkit-transform:unset !important;
   -moz-transform:unset !important;
   -ms-transform:unset !important;
   -o-transform:unset !important;
 }
-main.Home .swiper-gallery .swiper-slide-next .IMG{
+main.Home-Mobile .swiper-gallery .swiper-slide-next .IMG{
  transform: translateY(5em);
  -webkit-transform: translateY(5em);
  -moz-transform: translateY(5em);
