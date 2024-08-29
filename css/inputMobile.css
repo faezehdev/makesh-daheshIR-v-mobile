@@ -890,7 +890,9 @@ a {
 .serviceShow .share svg {
   stroke: #2e3192f3;
 }
-
+.serviceShow .inShare .social-link svg {
+  stroke: #F37021F3;
+}
 .serviceShow .share .social-link {
   height: 30px;
   width: 30px;
@@ -1242,6 +1244,9 @@ html {
 .collapse.in {
   visibility: visible !important;
 }
+.collapse.show {
+  visibility: visible !important;
+}
 
 /* Add Indicator fontawesome icon to the left */
 #accordion .panel-heading .accordion-toggle::before {
@@ -1276,4 +1281,52 @@ html {
   left: 0;
   top: 0;
   z-index: 1;
+}
+
+
+.serviceShow .accordion .card-header button::before {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 1px;
+  transform: translateY(11px);
+  background-color: black;
+  transition: 0.5s;
+}
+.serviceShow .accordion .card-header button {
+  display: flex;
+}
+.serviceShow .accordion .card-header button:focus {
+  outline: none;
+}
+.serviceShow .accordion .card-header p::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  transition: 0.5s;
+}
+.serviceShow .accordion .card-header button[aria-expanded=true]::before {
+  /* width: 87px; */
+  background-color: #F26737;
+}
+.serviceShow .accordion .card-header button[aria-expanded=true] p::before {
+  background-color: #F26737;
+}
+
+.serviceShow .accordion:nth-child(1) .card-header{
+border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.serviceShow .userInfo::after{
+content: "*";
+position: absolute;
+left: 0;
+top: 10px;
+color: red;
+}
+.serviceShow .userInfo{
+position: relative;
 }
