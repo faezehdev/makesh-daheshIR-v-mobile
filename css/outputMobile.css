@@ -4431,24 +4431,6 @@ main.Home-Mobile .swiper-gallery .swiper-slide-next .IMG{
   -o-transform: translateY(1.5em);
 }
 
-.Rep-Lists li{
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;
-  -ms-transition: all .4s ease;
-  -o-transition: all .4s ease;
-  color: #BCBDBD;
-}
-
-.Rep-Lists li.active{
-  color: #1E1E1E;
-  border-bottom: 1px solid #1E1E1E;
-}
-
-.RepContainer header{
-  background-color: #FFFFFF80;
-}
-
 header.GoBottom .Toggle-item{
   background-color: #1E1E1E;
 }
@@ -4462,18 +4444,6 @@ main.Error.Toggle-item{
   background-color: #1E1E1E;
 }
 
-main.RepContainer .Item a,
-main.RepContainer .Item svg path,
-main.GalleryCat .Item a,
-main.GalleryCat .Item svg path,
-main.GalleryList .Item a,
-main.GalleryList .Item svg path,
-main.GalleryShow .Item a,
-main.GalleryShow .Item svg path,
-main.Search .Item a,
-main.Search .Item svg path,
-main.Error .Item a,
-main.Error .Item svg path,
 header.GoBottom .Item a,
 header.GoBottom .Co svg path{
   color: #1E1E1E;

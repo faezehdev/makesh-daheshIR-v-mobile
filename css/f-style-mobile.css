@@ -1,7 +1,7 @@
 main.Home .About-Container .Text  p,
-main.aboutUS .AboutUS-c .Text p,
-main.aboutUS .Detail-Container .Box .Text p,
-main.aboutUS .multimedia__subline p {
+main.aboutUS-Mobile .AboutUS-c .Text p,
+main.aboutUS-Mobile .Detail-Container .Box .Text p,
+main.aboutUS-Mobile .multimedia__subline p {
 font-size: 14px;
 font-weight: 300;
 line-height: 31px;
@@ -9,30 +9,17 @@ color: #fff;
 text-align: justify;
 font-family: "IRANSansWeb300";
 }
-
+main.aboutUS-Mobile .AboutUS-c .Text p,
+main.aboutUS-Mobile .multimedia__subline p{
+   color: #475569 !important;
+}
 .Services-Container .Bottom-S,
-main.aboutUS .AboutUS-c .Text p ,
-main.aboutUS .Detail-Container .Box .Text p,
-main.aboutUS .multimedia__subline p{
-    color:#1E1E1E !important; 
+main.aboutUS-Mobile .Detail-Container .Box .Text p
+{
+    color:#000000!important; 
 }
-main.Home .swiper-brands,
-main.Home .swiper-brands .swiper-slide,
-main.Home .swiper-brands .swiper-slide a,
-main.Home .swiper-brands .swiper-slide .IMG-2,
-main.Home .swiper-brands .swiper-slide .IMG-2 img{
-    height: 134px;
-}
-main.Home .Brands-Container a.btn-show{
-    transform: translate(-3em, 1em) !important;
-    -webkit-transform: translate(-3em, 1em) !important;
-    -moz-transform: translate(-3em, 1em) !important;
-    -ms-transform: translate(-3em, 1em) !important;
-    -o-transform: translate(-3em, 1em) !important;
-}
-.P-Cat .Det{
-    width: 80%;
-}
+
+
 .representaition-Container >.Top{
     margin-top: 1em;
 }
@@ -42,16 +29,12 @@ main.Home .Brands-Container a.btn-show{
   height: 244px;
   object-fit: cover;
 }
-.timeline__entry:nth-child(2n):after{
-    bottom: -.7em !important; 
-}
 .timeline__entry:nth-child(2n) span{
     margin-top: 127px !important;
 }
-.timeline__entry:after{
-    bottom: 49px !important; 
-}
+
 .timeline__map::before{
+    bottom: 10px;
     background-color: #FAFAFA !important;
 }
 .fade-in p,
@@ -84,7 +67,7 @@ main.Error .Toggle-item{
     background-color: #1E1E1E;
     }
  main.Error {
-        height: 100vh;
+
         overflow: hidden;
     }
 
@@ -117,7 +100,7 @@ main.Error .Toggle-item{
         -o-transition: all .8s ease;
     }
     
-    main.Home .Service{
+    main.Home-Mobile .Service{
         opacity: 0;
         transform: translateY(1.5em);
         -webkit-transform: translateY(1.5em);
@@ -130,4 +113,35 @@ main.Error .Toggle-item{
         -ms-transition: all .8s ease;
         -o-transition: all .8s ease;
     }
-    
+.Title-p,.productCat-Mobile .P-Cat .Title p,
+.productCat-Mobile .P-Cat .Det p{
+    opacity: 0;
+    transform: translateY(1.5em);
+    -webkit-transform: translateY(1.5em);
+    -moz-transform: translateY(1.5em);
+    -ms-transform: translateY(1.5em);
+    -o-transform: translateY(1.5em);
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+}
+main.Home-Mobile  .Section-9 {
+    margin-bottom: 2em;
+}
+
+main.aboutUS-Mobile .timeline__slider .Nav{
+    bottom: 0;
+    transform: translateY(5em) !important;
+    -webkit-transform: translateY(5em) !important;
+    -moz-transform: translateY(5em) !important;
+    -ms-transform: translateY(5em) !important;
+    -o-transform: translateY(5em) !important;
+}
+main.aboutUS-Mobile .timeline{
+    margin-bottom: 3em;
+}
+.Result-Container{
+    gap: 2em !important;
+}

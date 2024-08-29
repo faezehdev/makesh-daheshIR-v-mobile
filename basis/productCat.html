@@ -1,0 +1,92 @@
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" > 
+    <member request="cat" type="tree" name="productCat" parentid="21181" /> 
+  </basis>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دسته بندی محصولات</title>
+    <meta name="description" content="دسته بندی محصولات">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/new/swiper-bundle.min.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/new/leaflet.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/new/f-style-mobile.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/new/outputMobile.css">
+</head>
+<body dir="rtl">
+    <main class="productCat-Mobile">
+        <basis core="call" file="header-mobile.inc" pageindex="[##cms.cms.pageindex##]" />
+  <div class="Cat-Container w-full flex flex-col mt-[5em]">
+    <div class="ProductCat-Container w-full flex justify-start items-start flex-col relative overflow-hidden">
+       <div class="ProductCats w-full flex-col flex cursor-none justify-center items-center ">
+        <basis core="print" datamembername="db.productCat">
+            <layout>
+                @child
+            </layout>
+            <face filter="catid in (21182,21183,209714)">
+        <div class="P-Cat h-[335px] w-full flex justify-start items-start  hover:cursor-none group cursor-none">
+            <a href="@link" alt="@title" title="@title"
+             class="w-full flex justify-start items-start flex-col hover:cursor-none relative h-full">
+            <div class="IMG w-full flex justify-center items-center h-full ">
+                <img src="[##cms.cms.cdn##]/images/new/@catid-mobile.png" alt="@title" title="@title" class="w-full object-cover h-full">
+            </div> 
+            <div class="OV w-full h-full flex justify-center items-center
+            bg-[#00000073] z-2 duration-[.9s]
+             flex-col absolute left-0 top-0">
+                <div class="Title fadeIN w-[90%] mx-auto flex justify-start items-center overflow-hidden py-[.5em]">
+                    <p class="font-IRANSansWeb300 leading-21.91 
+                    duration-[.9s]
+                     font-light text-sm text-[#FFFFFFCC] text-right">
+                        @title
+                    </p>
+                </div>
+                <div class="Det fadeIN w-[90%] mx-auto flex justify-start items-start flex-col overflow-hidden py-[.5em]">
+                    <p class="font-IRANSansWeb500 leading-23 
+                     duration-[.9s]
+                     font-medium text-base text-[#FFFFFFCC] text-justify">
+                     @urldescription
+                    </p>
+                </div>
+                <span class="mr-[1.5em] ml-auto btn-show group bg-transparent duration-[.4s]
+                border-none outline-none flex justify-start mt-[1.2em]
+                 items-start relative">
+                    <span class="Btn group-hover:h-[20px] w-auto flex duration-[.4s]
+                    justify-center items-center leading-20.25 text-f rounded-sm font-medium
+                     font-IRANSansWeb500 text-[12.33px] py-[1em] border-r-[1px] px-[3em] border-t-[1px]
+                     border-b-[1px] border-f">
+                     مشاهده
+                    </span>
+                    <svg class="BTN relative left-0 top-0" viewBox="-25 -25 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+                        <circle fill="transparent" stroke="#fff" id="c1" stroke-dasharray="565.48px"
+                         stroke-dashoffset="0" style="transform: translate(2px,82px);" stroke-width="2" r="25" cy="18" cx="98"></circle>
+                         <circle id="c2" cx="100" cy="100" fill="transparent" stroke="#fff" stroke-width="2" stroke-dasharray="565.48px" stroke-dashoffset="0" r="65"></circle>
+                          </svg>
+                        </span>
+            </div>
+         </a>
+        </div>
+            </face>
+        </basis>
+       </div>
+     </div>
+     <basis core="call" file="footer-mobile.inc" pageindex="[##cms.cms.pageindex##]" />
+  </div>
+    </main>
+    <basis core="call" file="script-mobile.inc" />
+<script>
+        gsap.to('.Title p',{
+        y:0,
+        opacity:1,
+        scale:1,
+        stagger:.2,
+    })
+    gsap.to('.Det p',{
+        y:0,
+        opacity:1,
+        scale:1,
+        stagger:.2,
+ 
+    })
+</script>
+</body>
+</html>

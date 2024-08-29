@@ -4,6 +4,7 @@ let closeShare =  document.querySelector('.ShareBox-Container .CloseShare')
 let whatsapp = document.querySelector('.ShareBox-Container .whatsapp')
 let linkdin = document.querySelector('.ShareBox-Container .linkdin')
 let telegram = document.querySelector('.ShareBox-Container .telegram')
+
 let productLink
 sharebtns.forEach(btn=>{
     btn.addEventListener('click',(e)=>{

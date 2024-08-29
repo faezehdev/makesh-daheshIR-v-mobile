@@ -241,5 +241,35 @@ faders.forEach(fade=>{
     })
 })
 
+let sec = document.querySelectorAll('.sec')
+sec.forEach(s=>{
+    gsap.to(s.querySelector('.Title-p'),{
+        y:0,
+        opacity:1,
+        scale:1,
+        stagger:.2,
+        scrollTrigger:{
+            trigger:s,
+            start:"top 60%",
+            end:"bottom bottom"
+        }
+    })
+
+})
+
+let servicess = document.querySelectorAll('.Service')
+servicess.forEach(s=>{
+    gsap.to(s,{
+        y:0,
+        opacity:1,
+        scale:1,
+        stagger:.2,
+        scrollTrigger:{
+            trigger:s,
+            start:"top 60%",
+            end:"bottom bottom"
+        }
+    })
+  })
 
  
