@@ -1,0 +1,213 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="5" usedforid="8479">
+    <member name="footer" type="view"/> 
+   </basis>
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="1409501">
+   <member name="cataloge" type="list" format="pdf"/> 
+</basis>   
+    <!-- FOOTER -->
+    <footer class="FooterMobile-2 flex flex-col  relative">
+        <div class="News-Form  mx-auto  
+        shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]
+        ml-auto mr-auto w-[100%] bg-b7">
+          <div class="FormC w-[90%] flex-col ml-auto mr-auto flex gap-2 justify-center items-start pt-[.8em] pb-5">
+              <span class="Title flex justify-start items-center" >
+                  <span class="w-max font-IRANSansWeb500 text-base  leading-25.04 text-f">
+                      عضویت در خبرنامه
+                  </span>
+              </span>
+              <div class="Form-Container w-full  flex justify-start items-start">
+                  <div class="Box w-full flex-col flex justify-end items-center" >
+                      <basis core="schema" run="atclient" OnRendered="rendered"
+                      schemaUrl="/schema/domainform/DEE01D7A-5A5B-47E7-9D1D-3DB129A8DA5E/329FF5BF-39B0-4F45-B93D-3E8ED7F8C42A/fa/فرم-"
+                  displayMode="new" button="[data-btn-add]" resultSourceId="demo.data"> 
+                  </basis> 
+                  
+                  <basis core="callback" run="AtClient" triggers="demo.data" method="onSource"></basis> 
+                  <basis core="api" url="/schema/domainform/DEE01D7A-5A5B-47E7-9D1D-3DB129A8DA5E/fa/editobject" method="post" 
+                  run="atclient" 
+                  body="object_edit={##edit.object.value##}&captcha={##edit.object.captcha##}&captchaid={##edit.object.captchaid##}" 
+                  content-type="application/x-www-form-urlencoded" triggers="edit.object" if="{##edit.object|(false)##}" 
+                  OnProcessed="OnProcessesEditObjectFn"> 
+                  </basis>
+                  <basis core="dbsource" source="trust_login" run="atclient" name="captcha" triggers="refresh.captcha">
+                      <member type="scalar" request="captcha" name="code" />
+                      </basis>
+                          <div class="col w-full flex justify-start items-center gap-2 flex-col ">
+                          <basis core="print" datamembername="captcha.code" run="atclient">
+                              <layout>
+                                  <script type="text/template">
+                                  @child
+                                  </script>
+                              </layout>
+                              <face>
+                            
+                                  <script type="text/template">
+                                     <div class="captchaBox  
+                                      w-full flex justify-start items-center">
+                                         <input type="hidden" name="captchaid" value="@captcha@"
+                                         class="border-b border border-b9 border-solid" />
+                                           <!-- <input type="hidden" name="captcha" value="@captcha@" /> -->
+                                        <input type="text" class="codeinputm w-full
+                                        placeholder:text-f  !bg-transparent
+                                        placeholder:font-IRANSansWeb300 border-b border-b-1 border-f border-solid
+                                        placeholder:text-right   placeholder:font-light   placeholder:text-sm
+                                        placeholder:leading-21.91  pb-[.8em]" 
+                                        name="captcha" placeholder="کد روبه رو را وارد کنید"
+                                       /> 
+                          
+                          
+                                         <img src="@captcha@" alt="captcha"  title="captcha"
+                                         class="capcha border-l-1 border-r-1 border-b9 border-solid"/>
+                                        <img src="https://www.freeform.ir/assets/images/sync.png" class="refresh" alt="" bc-triggers="click" 
+                                        name="refresh.captcha" bc-value="true"/>
+                                      
+                                   </div>
+                                  </script>
+                              </face>
+                          </basis>
+                              <button type="submit" class="schemaBtn 
+                              ShowListBTN  
+                              border-none
+                              bg-transparent
+                               pl-[2rem]
+                               pr-[2rem] rounded  " data-btn-add data-btn-submit="" >
+                          
+                                  
+                                      <span  class="font-IRANSansWeb500 w-full font-medium
+                                      text-sm leading-17.96 text-f">
+                                          ثبت 
+                                      </span>
+                              </span>
+                               
+                          </div>
+                       
+                     
+                  </div>
+                
+              </div>
+          </div>
+        </div>
+        <div class="Box-inner w-full flex bg-f justify-center items-center flex-col">
+            <div class="Top mt-[2em] ml-auto mr-auto w-[65%] flex
+            justify-center items-center pb-4 ">
+              <div class="Left w-full flex justify-center items-center">
+                  <div class="Logo  w-full flex justify-center items-center">
+                    <a href="/" alt="makeshdahesh" title="makeshdahesh" class="w-full flex  justify-center items-center">
+                        <img src="[##cms.cms.cdn##]/images/new/logo-footer.png" class="w-full flex" alt="makeshdahesh" title="makeshdahesh">
+                    </a>
+                  </div>
+              </div>
+            
+           </div>
+           <div class="Bottom ml-auto mr-auto w-[65%] flex pt-[2em] pb-[2em]
+           justify-center items-center gap-[1em]">
+              <div class="Middle ml-auto mr-auto w-[100%] flex justify-between items-center h-full">
+                  <div class="box h-[100px] w-[100%]  flex justify-between items-center">
+                  
+                      <div class="Links h-full w-[50%] flex-col flex justify-between items-center">
+                        <span class="Link w-auto flex justify-start items-center">
+                            <a href="[##cms.cms.cdn##]/file/MackeshFanSelection.zip" download="" alt="mackesh-dahesh" title="mackesh-dahesh"
+                            class="text-right font-IRANSansWeb300 font-light text-sm leading-21.91 text-b9">
+                                دریافت نرم افزار
+                            </a>
+                        </span>
+                        <span class="Link w-auto flex justify-start items-center">
+                            <basis core="print" datamembername="db.cataloge">
+                                <layout>
+                                    @child
+                                </layout>
+                                <face filter="ord=1000">
+                            <a href="@largeIMG" download="" alt="mackesh-dahesh" title="mackesh-dahesh"
+                            class="text-right font-IRANSansWeb300 font-light text-sm leading-21.91 text-b9">
+                                دریافت کاتالوگ
+                            </a>
+                                </face>
+                            </basis>
+                        </span>
+                        <span class="Link w-auto flex justify-start items-center">
+                            <a href="#" class="text-right font-IRANSansWeb300 font-light text-sm leading-21.91 text-b9">
+                                دریافت رزومه
+                            </a>
+                        </span>
+                      </div>
+                      <span class="Qr h-full w-[50%] flex justify-center items-center">
+                        <img src="[##cms.cms.cdn##]/images/new/QRCode-footer.png" alt="mackesh-dahesh" title="mackesh-dahesh"
+                         class="w-[100%] h-full object-contain">
+                    </span>
+                  </div>
+              </div>
+           </div>
+           <div class="Right w-[100%] flex justify-center items-center">
+            <div class="Contact-box mb-[2em] w-[70%] ml-auto mr-auto flex justify-center items-center gap-[.3em]">
+                <span class="text-right font-IRANSansWeb300 font-light text-sm leading-21.91 text-b9">
+                    تماس:
+                </span>
+                <span class="Phones w-auto flex  justify-center items-center gap-3 
+                [&>a:not(:last-child)]:before:absolute
+                [&>a:not(:last-child)]:before:left-[-7px]  [&>a:not(:last-child)]:before:top-0
+                [&>a:not(:last-child)]:before:text-b9f  [&>a:not(:last-child)]:before:content-[',']">
+                <basis core="print" datamembername="db.footer">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="TypeID=240">
+                    <a href="tel:@Answer" alt="mackesh-dahesh" title="makesh-dahesh"
+                     class="relative text-right font-IRANSansWeb300 font-light 
+                    text-sm leading-21.91 text-b9 faNum">
+                    @Answer
+                    </a>
+                    </face>
+                </basis>
+                
+                </span>
+            </div>
+        </div>
+        </div>
+    
+       <div class="CopyRightC w-full flex bg-b7 justify-center items-center pt-4 pb-4">
+              <a href="https://www.namasite.ir/" alt="namasite" title="namasite"
+               class="w-auto flex justify-center items-center gap-3"> 
+                  <span class="copyRight text-center font-IRANSansWeb400 font-normal text-xs leading-27.45 text-f">
+                      طراحی سایت و بهینه سازی سایت
+                   </span>
+                   <span>
+                      <img src="[##cms.cms.cdn##]/images/copyright.png" alt="namasite" title="namasite" >
+                   </span>
+              </a>
+       </div>
+      </footer>
+      <!-- FOOTER -->
+        
+      <div class="main-container">
+        <span></span>
+      </div>
+      <div class="searchContainer opacity-0 duration-[.4s] pointer-events-none flex justify-center
+          [&.show]:opacity-[1]  [&.show]:pointer-events-auto flex-col items-center fixed z-[900000] 
+          left-0 top-0 w-full h-full bg-f">
+            <span class="CloseSerch hover:cursor-pointer ml-auto flex justify-center items-center mr-[2em] mt-[2em] absolute
+            top-0 right-0">
+              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.0846 10.1492L27.8521 7.91666L19.0013 16.7675L10.1505 7.91666L7.91797 10.1492L16.7688 19L7.91797 27.8508L10.1505 30.0833L19.0013 21.2325L27.8521 30.0833L30.0846 27.8508L21.2338 19L30.0846 10.1492Z" fill="#1D2F3B"/>
+                </svg>
+                
+            </span>
+            <div class="inputBox flex w-[90%] justify-center items-center relative">
+               
+              <input type="search" name="q" id="search" placeholder="جستجو کنید" class="w-full h-[40px] border-t-0 border-l-0
+              border-r-0 border-b border-b9 border-solid placeholder:font-IRANSansWeb500 placeholder:text-base
+              placeholder:font-medium placeholder:leading-25.4 placeholder:text-b9 focus-visible:outline-none"  >
+              <button type="button" aria-label="search" class="sBTN border-none outline-none bg-transparent">
+              <span class="SearchIcon absolute left-0 top-[8px] z-20">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.92 13.92L17 17M16.111 8.581C16.111 12.768 12.728 16.162 8.556 16.162C4.383 16.162 1 12.768 1 8.582C1 4.393 4.383 1 8.555 1C12.728 1 16.111 4.394 16.111 8.581Z" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      </button>
+              </span>
+          
+        
+          </div>
+          <!-- <div class="resultSearch">
+            <p>باعرض پوزش مطلبی پیدا نشد. واژه دیگری را جست و جو نمایید.</p>
+          </div> -->
+          </div>
+    
