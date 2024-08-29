@@ -87,3 +87,47 @@ main.Error .Toggle-item{
         height: 100vh;
         overflow: hidden;
     }
+
+    .About-Container .Text p{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 31px;
+        color: #fff;
+     }
+     .fadeIN p,
+     .fadeIN span,
+     .fadeIN h1,
+     .fadeIN h2,
+     .fadeIN h3,
+     .fadeIN h4,
+     .fadeIN h5,
+     .fadeIN h6,
+     .fadeIN li
+    {
+        opacity: 0;
+        transform: translateY(1.5em);
+        -webkit-transform: translateY(1.5em);
+        -moz-transform: translateY(1.5em);
+        -ms-transform: translateY(1.5em);
+        -o-transform: translateY(1.5em);
+        transition: all .8s ease;
+        -webkit-transition: all .8s ease;
+        -moz-transition: all .8s ease;
+        -ms-transition: all .8s ease;
+        -o-transition: all .8s ease;
+    }
+    
+    main.Home .Service{
+        opacity: 0;
+        transform: translateY(1.5em);
+        -webkit-transform: translateY(1.5em);
+        -moz-transform: translateY(1.5em);
+        -ms-transform: translateY(1.5em);
+        -o-transform: translateY(1.5em);
+        transition: all .8s ease;
+        -webkit-transition: all .8s ease;
+        -moz-transition: all .8s ease;
+        -ms-transition: all .8s ease;
+        -o-transition: all .8s ease;
+    }
+    
