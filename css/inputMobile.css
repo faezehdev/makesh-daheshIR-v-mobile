@@ -102,7 +102,6 @@
   font-style: normal;
   font-display: swap;
 }
-header .Menu-Container {
 
 * {
   font-family: "IRANSansWeb400";
@@ -292,13 +291,13 @@ main.Home-Mobile
   stroke: #fff !important;
 }
 
-.Service .Top-S:hover svg {
-/* .Service .Top-S:hover svg{
+.Service .Top-S:hover svg ,
+.Service .Top-S:hover svg{
   width: 30px;
 }
 main.Home-Mobile .navigationBTN .swiper-button-prev,
 main.Home-Mobile .navigationBTN .swiper-button-next {
-} */
+}
 main.Home-Mobile .navigationBTN .swiper-button-prev,main.Home-Mobile .navigationBTN .swiper-button-next{
   position: static !important;
   margin: 0 !important;
@@ -347,12 +346,7 @@ main.Home-Mobile .swiper-gallery .swiper-slide-next .IMG {
   stroke: #fff;
   transition: all 500ms;
 }
-.Rep-Lists li {
-  transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
+
 
 .Rep-Lists li{
   transition: all .4s ease;
@@ -406,13 +400,7 @@ main.RepContainer header,
 main.GalleryList header main.GalleryShow header,
 main.Search header,
 main.Error header {
-  background-color: #ffffff80;
-  main.aboutUS-Mobile  header,main.GalleryCat header,
-  main.RepContainer header,
-  main.GalleryList header
-  main.GalleryShow header,
-  main.Search header,
-  main.Error header{
+
 
     background-color: #FFFFFF80;
 
@@ -650,19 +638,17 @@ main.Error header {
   color: #1e1e1e;
   text-align: justify;
 }
-.aboutUS .swiper-pagination .swiper-pagination-bullet-active {
+.aboutUS .swiper-pagination .swiper-pagination-bullet-active ,
 .aboutUS-Mobile  .swiper-pagination .swiper-pagination-bullet-active{
   background-color: white;
 }
-.aboutUS .GallerySlider .swiper-pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
+.aboutUS .GallerySlider .swiper-pagination .swiper-pagination-bullet ,
 .aboutUS-Mobile  .GallerySlider .swiper-pagination .swiper-pagination-bullet{
 width: 10px;
 height: 10px;
 }
 
-.aboutUS .GallerySlider .swiper-pagination {
+.aboutUS .GallerySlider .swiper-pagination ,
 .aboutUS-Mobile  .GallerySlider .swiper-pagination{
   position: unset;
   width: fit-content;
