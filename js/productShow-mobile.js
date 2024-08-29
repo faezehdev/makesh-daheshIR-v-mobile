@@ -1,5 +1,5 @@
 const thumbSlider = new Swiper(".thumbSlider", {
-  slidesPerView: 3.6,
+  slidesPerView: 2.5,
   spaceBetween: 15,
   navigation: {
     nextEl: ".nextThumb",
@@ -22,18 +22,35 @@ document.querySelectorAll('.toggle-button').forEach(btn => {
   });
 
 
+  const relatedProduct = new Swiper('.relatedProduct', {
 
-
-
-
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.nextRelatePro',
+      prevEl: '.prevRelatePro',
+    },
+  
+  
+  });
+  const relatedProject = new Swiper('.relatedProject', {
+  
+    loop: false,
+    spaceBetween: 10,
+  
+  
+  
+  
+  });
   
   jQuery(document).ready(function() {
 	
 	jQuery('.openPara').readmore({
 		speed: 100,
 		collapsedHeight:66,
-		moreLink: '<button class="font-IRANSansWeb400 text-xs text-b2" dir="ltr">مشاهده بیشتر +</button>',
-		lessLink: '<button class="font-IRANSansWeb400 text-xs text-b2" dir="ltr">مشاهده کمتر -</button>',
+		moreLink: '<button class="font-IRANSansWeb400 text-xs text-b2" dir="ltr" style="float:right;">مشاهده بیشتر +</button>',
+		lessLink: '<button class="font-IRANSansWeb400 text-xs text-b2" dir="ltr" style="float:right;">مشاهده کمتر -</button>',
 		heightMargin: 16,
         afterToggle: function(trigger, element, expanded) {
             
@@ -62,3 +79,21 @@ for (let i = 0; i < starsRating.length; i++) {
     }, 100);
   })
 }
+
+
+
+gsap.registerPlugin(ScrollTrigger) 
+// Scale in animation
+let scrollToTop = document.querySelectorAll('.scrollToTop')
+scrollToTop.forEach(s=>{
+      gsap.to(s , {
+        scrollTrigger:{
+          trigger:s,
+          start : "top 60%",
+          end : "bottom bottom",
+        },
+        opacity :1,
+        y:0,
+      })
+ 
+})

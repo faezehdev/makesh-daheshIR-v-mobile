@@ -1,11 +1,18 @@
 let filterBtn = document.querySelectorAll(".newsList nav ul li")
 
-filterBtn[0].classList.add("activeList")
+filterBtn[0].classList.add("newactiveList")
 filterBtn.forEach(element => {
     element.addEventListener("click" , function (params) {
-        $(".newsList nav ul li").removeClass("activeList")
-        element.classList.add("activeList")
+        $(".newsList nav ul li").removeClass("newactiveList")
+        element.classList.add("newactiveList")
     })
+});
+
+$(document).ready(function () {
+  $(".filterBtn").click(function (e) {
+      var url4 = $(this).attr("data-project");
+      $(".gridNews").load(url4);
+  });
 });
 
 

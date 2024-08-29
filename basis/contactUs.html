@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/outputMobile.css">
+</head>
+<body>
+    <div class="contactUs">
+        <div class="section1 mt-10">
+            <div class="mapSection w-full h-[296px] shadow-[0px_8px_6px_-4px_rgba(0,_0,_0,_0.1)]">
+                <div class="mapContainer w-full h-full relative z-0">
+                    <div class="mapIn map h-full" id="map" data-x="51.3987223" data-y="35.7569334"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section2 px-5 mt-10" dir="rtl">
+            <h1 class="font-IRANSansWeb700 text-base text-b1 mb-4">
+                تماس با ما 
+            </h1>
+            <address class="font-IRANSansWeb300 text-sm mb-10 not-italic">
+                <p>
+                    تهران ، ابتدای خیابان مفتح جنوبی ، نرسیده به خیابان انقلاب ، جنب پل زیرگذر سواری دروازه دولت ، مجتمع تجاری اداری 21 ، طبقه اول ، واحد 32
+                </p>
+            </address>
+            <div class="phones flex gap-x-1 flex-wrap mb-10">
+                <a href="tel:" title="call" class="font-IRANSansWeb300 text-sm text-b9">
+                    02188329978
+                </a>
+                <span class="font-IRANSansWeb300 text-sm text-b9 last:hidden">,</span>
+                <a href="tel:" title="call" class="font-IRANSansWeb300 text-sm text-b9">
+                    02188329978
+                </a>
+                <span class="font-IRANSansWeb300 text-sm text-b9 last:hidden">,</span>
+                <a href="tel:" title="call" class="font-IRANSansWeb300 text-sm text-b9">
+                    02188329978
+                </a>
+                <span class="font-IRANSansWeb300 text-sm text-b9 last:hidden">,</span>
+            </div>
+            <div class="mails mb-5">
+                <a href="mailto:" title="mail" class="block font-YekanBakh400 text-sm text-b9">
+                    info@mackesh-dahesh.ir
+                </a>
+                <a href="mailto:" title="mail" class="block font-YekanBakh400 text-sm text-b9">
+                    info@mackesh-dahesh.ir
+                </a>
+            </div>
+            <div class="days mb-5 font-IRANSansWeb300 text-sm text-b9">
+                <p>
+                    شنبه تا چهارشنبه از ساعت 9 الی 17
+                </p>
+            </div>
+            <div class="btnsMain mb-5 mt-2 h-[45px] flex items-center gap-x-7 translate-x-[10px]">
+                <a href="" class="btttns flex relative" dir="ltr">
+                    <div class="holes z-1 translate-x-[50%]">
+                        <div class="hole1 duration-500 border border-bg1"></div>
+                        <div class="hole2 duration-500 border border-bg1"></div>
+                    </div>
+                    <div
+                        class="text relative top-[1px] origin-top duration-500 rounded-tr-md rounded-br-md scale-x-90 w-[118px] flex items-center justify-center border-t border-t-b10 border-r border-r-b10">
+                    </div>
+                    <span
+                        class="font-IRANSansWeb500 self-center duration-500 text-sm text-b5 absolute right-4 ">
+                        نمایندگی
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="section3 qr py-4 flex items-center justify-center bg-b4">
+            <img src="images/QRCode (1) 1.png" alt="">
+        </div>
+        <div class="section4 px-5" dir="rtl">
+            <h2 class="my-7 px-1 font-IRANSansWeb700 text-base text-b1">
+                فرم ارتباط با
+            </h2>
+            
+            <form dir="rtl" name="myForm" class=" homeForm1" action="" onsubmit="return validateForm()"
+            method="post">
+            <basis core="schema" run="atclient"
+                schemaUrl="/schema/domainform/DEE01D7A-5A5B-47E7-9D1D-3DB129A8DA5E/0A1CD3D5-F3E4-4FBD-86AA-761A97905337/fa/فرم-ارتباط-با-ما"
+                displayMode="new" button="[data-btn-add1]" resultSourceId="demo.data1" onRendered="renderFn1">
+            </basis>
+            <basis core="callback" run="AtClient" triggers="demo.data1" method="onSource1"></basis>
+            <basis core="api" url="/schema/domainform/DEE01D7A-5A5B-47E7-9D1D-3DB129A8DA5E/fa/editobject"
+                method="post" run="atclient"
+                body="object_edit={##edit.object1.value##}&captcha={##edit.object1.captcha##}&captchaid={##edit.object1.captchaid##}"
+                content-type="application/x-www-form-urlencoded" triggers="edit.object1" if="{##edit.object1##}"
+                OnProcessed="OnProcessedEditObject1">
+            </basis>
+            <div data-bc-question="" class="qclass8 relative mt-2.5">
+                <div class="responsMsg1 responsMsg font-IRANSansWeb400 text-sm absolute" style="top: -14px;white-space: nowrap;">
+                    <span>فرم با موفقیت ثبت شد.</span>
+                </div>
+                <div id="requestBox" class="captchaContainerclass mt-2.5 captcha-sefaresh2"
+                    data-bc-answer-container="" data-bc-schema-info-multi="0" data-bc-schema-info-word="58"
+                    data-bc-schema-info-part="1" data-bc-schema-info-part-0-type="text">
+                    <basis core="dbsource" source="trust_login" name="captcha1" triggers="cms.reload1"
+                        run="atclient">
+                        <member name="code1" type="scalar" request="captcha"></member>
+                    </basis>
+                    <basis datamembername="captcha1.code1" core="print" run="atclient">
+                        <face>
+                            <script type="text/template">
+                                <img src="images/new/reload.png" class="refressh refressh1 cursor-pointer" run="atclient" bc-triggers="click" bc-name="cms.reload1" />
+
+                  <span class="captcha-sefaresh">
+                      <img src="/@captcha@" width="88" height="44" class="captcha-sefaresh"
+                          alt="captcha" title="captcha" />
+                      <input type="hidden" name="captchaid" value="@captcha@" />
+                  </span>
+              <input type="text" class="codeinputm" name="captcha"
+                  placeholder="کد امنیتی را وارد کنید" />
+            </script>
+                        </face>
+                    </basis>
+                </div>
+
+             
+           
+
+
+
+                <button class="btnsMain subBtn h-[45px] flex items-center gap-x-7" type="submit" data-btn-add1 data-btn-submit="">
+                <div class="btttns flex relative" dir="ltr">
+                    <div class="holes z-1 translate-x-[50%]">
+                        <div class="hole1 duration-500 border border-bg1"></div>
+                        <div class="hole2 duration-500 border border-bg1"></div>
+                    </div>
+                    <div
+                        class="text relative top-[1px] origin-top duration-500 rounded-tr-md rounded-br-md scale-x-90 w-[118px] flex items-center justify-center border-t border-t-b10 border-r border-r-b10">
+                    </div>
+                    <span
+                        class="font-IRANSansWeb500 self-center duration-500 text-sm text-b5 absolute right-4 ">
+                        دانلود کاتالوگ
+                    </span>
+                </div>
+            </button>
+
+            
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/scrollTrigger.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/contactUs.js"></script>
+
+</body>
+</html>
