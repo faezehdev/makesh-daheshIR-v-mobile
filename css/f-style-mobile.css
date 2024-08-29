@@ -1,0 +1,147 @@
+main.Home .About-Container .Text  p,
+main.aboutUS-Mobile .AboutUS-c .Text p,
+main.aboutUS-Mobile .Detail-Container .Box .Text p,
+main.aboutUS-Mobile .multimedia__subline p {
+font-size: 14px;
+font-weight: 300;
+line-height: 31px;
+color: #fff;
+text-align: justify;
+font-family: "IRANSansWeb300";
+}
+main.aboutUS-Mobile .AboutUS-c .Text p,
+main.aboutUS-Mobile .multimedia__subline p{
+   color: #475569 !important;
+}
+.Services-Container .Bottom-S,
+main.aboutUS-Mobile .Detail-Container .Box .Text p
+{
+    color:#000000!important; 
+}
+
+
+.representaition-Container >.Top{
+    margin-top: 1em;
+}
+.GalleryShow .VideoBox ,
+.GalleryShow .VideoBox .Video,
+.GalleryShow .VideoBox .Video video{
+  height: 244px;
+  object-fit: cover;
+}
+.timeline__entry:nth-child(2n) span{
+    margin-top: 127px !important;
+}
+
+.timeline__map::before{
+    bottom: 10px;
+    background-color: #FAFAFA !important;
+}
+.fade-in p,
+.fade-in h2,
+.fade-in h3,
+.fade-in h4,
+.fade-in h5,
+.fade-in h6{
+    opacity: 0;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transition: all .8s ;
+    -webkit-transition: all .8s ;
+    -moz-transition: all .8s ;
+    -ms-transition: all .8s ;
+    -o-transition: all .8s ;
+}
+.resultSearch p{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 55px;
+    color:#1E293B;
+    text-align: justify;
+    font-family: "IRANSansWeb500";
+}
+main.Error .Toggle-item{
+    background-color: #1E1E1E;
+    }
+ main.Error {
+
+        overflow: hidden;
+    }
+
+    .About-Container .Text p{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 31px;
+        color: #fff;
+     }
+     .fadeIN p,
+     .fadeIN span,
+     .fadeIN h1,
+     .fadeIN h2,
+     .fadeIN h3,
+     .fadeIN h4,
+     .fadeIN h5,
+     .fadeIN h6,
+     .fadeIN li
+    {
+        opacity: 0;
+        transform: translateY(1.5em);
+        -webkit-transform: translateY(1.5em);
+        -moz-transform: translateY(1.5em);
+        -ms-transform: translateY(1.5em);
+        -o-transform: translateY(1.5em);
+        transition: all .8s ease;
+        -webkit-transition: all .8s ease;
+        -moz-transition: all .8s ease;
+        -ms-transition: all .8s ease;
+        -o-transition: all .8s ease;
+    }
+    
+    main.Home-Mobile .Service{
+        opacity: 0;
+        transform: translateY(1.5em);
+        -webkit-transform: translateY(1.5em);
+        -moz-transform: translateY(1.5em);
+        -ms-transform: translateY(1.5em);
+        -o-transform: translateY(1.5em);
+        transition: all .8s ease;
+        -webkit-transition: all .8s ease;
+        -moz-transition: all .8s ease;
+        -ms-transition: all .8s ease;
+        -o-transition: all .8s ease;
+    }
+.Title-p,.productCat-Mobile .P-Cat .Title p,
+.productCat-Mobile .P-Cat .Det p{
+    opacity: 0;
+    transform: translateY(1.5em);
+    -webkit-transform: translateY(1.5em);
+    -moz-transform: translateY(1.5em);
+    -ms-transform: translateY(1.5em);
+    -o-transform: translateY(1.5em);
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+}
+main.Home-Mobile  .Section-9 {
+    margin-bottom: 2em;
+}
+
+main.aboutUS-Mobile .timeline__slider .Nav{
+    bottom: 0;
+    transform: translateY(5em) !important;
+    -webkit-transform: translateY(5em) !important;
+    -moz-transform: translateY(5em) !important;
+    -ms-transform: translateY(5em) !important;
+    -o-transform: translateY(5em) !important;
+}
+main.aboutUS-Mobile .timeline{
+    margin-bottom: 3em;
+}
+.Result-Container{
+    gap: 2em !important;
+}

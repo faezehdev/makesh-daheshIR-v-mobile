@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/outputMobile.css" />
+</head>
+
+<body>
+    <div class="sericeList" dir="rtl">
+        <h1 class="hidden">لیست خدمات</h1>
+        <div class="serviceContainer mt-24">
+            <div class="serviceBox mb-12">
+                <div class="imgS">
+                    <a href="" title="@title">
+                        <img class="w-full" src="images/00570X00380mda1040424247151001 11.png" alt="@title"
+                            title="@title" />
+                    </a>
+                </div>
+                <div class="serviceDetail relative z-1 -mt-10 px-5">
+                    <div class="inner p-4 shadow-[0px_10px_15px_-3px_rgba(0,_0,_0,_0.1)] bg-white/[0.8]">
+                        <h2 class="text-center font-IRANSansWeb500 text-base text-b7 mb-4">
+                            مشاوره و طراحی
+                        </h2>
+                        <div class="para font-IRANSansWeb300 text-sm text-center">
+                            <p>
+                                شرکت تهویه و تأسیسات مکش و دهش با ارائه خدماتی نظیر مشاوره در
+                                انتخاب فن های تهویه و تأمین هوای تازه در کاربردهای مختلف از
+                                جمله مسکونی، صنعتی، اداری، بیمارستانی، نیروگاهی و ... و همچنین
+                                طراحی و جانمایی جت فن های پارکینگی و ارائه طرح های اولیه تهویه
+                                پارکینگ جهت انتخاب فن های اگزاست و هوای تازه در نظر دارد تا
+                                بهترین پیشنهاد فنی ...
+                            </p>
+                        </div>
+                        <div class="btnsMain mt-4 h-[45px] mx-auto flex items-center justify-center gap-x-7">
+                            <a href="" class="btttns flex relative" dir="ltr">
+                                <div class="holes z-1 translate-x-[50%]">
+                                    <div class="hole1 duration-500 border border-bg1"></div>
+                                    <div class="hole2 duration-500 border border-bg1"></div>
+                                </div>
+                                <div
+                                    class="text relative top-[1px] origin-top duration-500 rounded-tr-md rounded-br-md scale-x-90 w-[118px] flex items-center justify-center border-t border-t-b10 border-r border-r-b10">
+                                </div>
+                                <span
+                                    class="font-IRANSansWeb500 self-center duration-500 text-sm text-b5 absolute right-4 ">
+                                    مشاهده
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/gsap.js"></script>
+<script src="js/scrollTrigger.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger) 
+// Scale in animation
+let scrollToTop = document.querySelectorAll('.scrollToTop')
+scrollToTop.forEach(s=>{
+      gsap.to(s , {
+        scrollTrigger:{
+          trigger:s,
+          start : "top 70%",
+          end : "bottom bottom",
+        },
+        opacity :1,
+        y:0,
+      })
+ 
+})
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="1" > 
+    <member request="cat" type="tree" name="galleryCat" parentid="58666" /> 
+</basis>	
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دسته بندی گالری</title>
+    <meta name="description" content="دسته بندی گالری">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/new/swiper-bundle.min.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/new/leaflet.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/new/f-style-mobile.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/new/outputMobile.css">
+</head>
+<body dir="rtl">
+    <main class="GalleryCat">
+        <basis core="call" file="header-mobile.inc" pageindex="[##cms.cms.pageindex##]" />
+        <div class="GalleryCats-C w-full flex flex-col justify-between items-center mt-[3em] overflow-hidden pb-[5em]">
+            <div class="Top w-[90%] mr-auto ml-auto">
+        
+                <h1 class="font-IRANSansWeb500 font-medium text-lg mt-[1.5em] leading-28.17 text-b1">
+                    دسته بندی گالری
+                </h1>
+          
+            </div>
+            <div class="Bottom w-full flex flex-col justify-start items-center mt-[1.8em]">
+                <div class="list-Gallerys w-[90%] mx-auto flex flex-col gap-[1.5em]">
+                    <basis core="print" datamembername="db.galleryCat">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="parentid=58666">
+                     <div class="Gallery w-full flex justify-between border-b-b1 border-b-[1px]
+                     items-center duration-[1s] group hover:bg-b5 translate-y-[3em] opacity-[0]">
+                        <a href="@link" alt="@title" title="@title"
+                         class="w-full flex flex-col justify-start items-center">
+                       <div class="DetBox w-full flex flex-col justify-center items-start mr-auto">
+                        <span class="line w-[125px] h-[1px] bg-b2 mt-2 duration-[.8s]
+                       "></span>
+                        <div class="DetTitle w-full flex justify-start items-center">
+                            <h2 class="font-IRANSansWeb500 font-medium  duration-[.8s]
+                             text-sm leading-21.91 text-b1 mb-[1em]">
+                             @title
+                            </h2>
+                        </div>                   
+                       </div>
+                       <div class="IMG w-full flex justify-center items-center">
+                        <img src="images/@catid-mobile.png" alt="@title" title="@title" 
+                         class="w-full object-cover 
+                         duration-[1s]">
+                       </div>
+                    </a>
+                </div>
+                        </face>
+                    </basis>
+                </div>
+                
+            </div>
+        </div>
+        <basis core="call" file="footer-mobile.inc" pageindex="[##cms.cms.pageindex##]" />
+    </main>
+    <basis core="call" file="script-mobile.inc" />
+    <script src="[##cms.cms.cdn##]/js/new/galleryCatMobile.js"></script>
+</body>
+</html>

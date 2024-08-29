@@ -1,26 +1,37 @@
 // PRODUCT SLIDER
 let swiperProduct= new Swiper(".swiper-products", {
-    slidesPerView:4,
-    spaceBetween: 40,
+    slidesPerView:1,
+    spaceBetween: 10,
       speed:1000
+      ,  navigation: {
+        nextEl: ".swiper-products .swiper-button-next",
+        prevEl: ".swiper-products .swiper-button-prev",
+      },
   });  
   // PROJECT SLIDER
 let swiperProject= new Swiper(".swiper-projects", {
-    slidesPerView:2.4,
-    spaceBetween: 50,
+    slidesPerView:1.1,
+    spaceBetween: 10,
    speed:800
   });  
 
-// news SLIDER
-let swiperNews= new Swiper(".swiper-news", {
-    slidesPerView:3.2,
-    spaceBetween: 30,
-   speed:800
+  //  BLOG SLIDER
+  let swiperBlog= new Swiper(".swiper-blogs", {
+    slidesPerView:1,
+    spaceBetween:30,
+      speed:1000
+      ,  navigation: {
+        nextEl: ".Blogs .swiper-button-next",
+        prevEl: ".Blogs .swiper-button-prev",
+      },
   });  
-
 // GALLERY SLIDER
 let swiperGallery= new Swiper(".swiper-gallery", {
-    slidesPerView:3.2,
+    slidesPerView:1,
     spaceBetween: 30,
-   speed:800
+   speed:800,
+    navigation: {
+    nextEl: " .gallery-Container .swiper-button-next",
+    prevEl: " .gallery-Container .swiper-button-prev",
+  },
   });  

@@ -12,35 +12,67 @@ boxes.forEach(p=>{
         }
     })
 })
-let sideBarLi = document.querySelectorAll(".sidebar li")
-
-sideBarLi[0].classList.add("activeList")
-//  POPUP
-let gallerys
-sideBarLi.forEach(element => {
-    element.addEventListener("click" , function(params) {
-        console.log(params.currentTarget.getAttribute('id'));
-        if(params.currentTarget.getAttribute('id')=='img')
-        {
-     
-            tabs[1].classList.remove('show') 
-            tabs[0].classList.add('show') 
-            console.log('imggg');
-            popupIMG()
-        }
-        else
-            {
-
-                tabs[0].classList.remove('show')
-                tabs[1].classList.add('show') 
-                popupVideo()
-            }
-        $(".sidebar li").removeClass("active")
-        element.classList.add("active")
-    })
-});
 let tabs = document.querySelectorAll('.tab')
 tabs[0].classList.add('show')
+// SELECTBOX
+let defOP = document.querySelectorAll('.default_option')
+defOP.forEach((d)=>{
+    d.addEventListener('click',(e)=>{
+   e.currentTarget.parentElement.classList.toggle("active")
+   let lis =e.currentTarget.nextElementSibling.querySelectorAll('.select_ul li')
+   lis.forEach(l=>{
+    l.addEventListener('click',(e1)=>{
+        let currentele = e1.currentTarget.querySelector('p').innerHTML
+        console.log(e1.currentTarget);
+        e1.currentTarget.parentElement.previousElementSibling.querySelector('p').innerHTML = currentele;
+        $('.select_ul li').removeClass( 'active' )
+        e1.currentTarget.classList.add("active")
+        let id = e1.currentTarget.getAttribute('id')
+        console.log(id);
+        if(id=='img'){
+                 
+                tabs[1].classList.remove('show') 
+                tabs[0].classList.add('show') 
+                console.log('imggg');
+               popupIMG()
+         }
+         else
+            {
+         
+                 tabs[0].classList.remove('show')
+                 tabs[1].classList.add('show') 
+                 popupVideo()
+         }
+        e1.currentTarget.parentElement.parentElement.classList.remove("active")
+       })
+   })
+})
+})
+//  POPUP
+let gallerys
+// sideBarLi.forEach(element => {
+//     element.addEventListener("click" , function(params) {
+//         console.log(params.currentTarget.getAttribute('id'));
+//         if(params.currentTarget.getAttribute('id')=='img')
+//         {
+     
+//             tabs[1].classList.remove('show') 
+//             tabs[0].classList.add('show') 
+//             console.log('imggg');
+//             popupIMG()
+//         }
+//         else
+//             {
+
+//                 tabs[0].classList.remove('show')
+//                 tabs[1].classList.add('show') 
+//                 popupVideo()
+//             }
+//         $(".sidebar li").removeClass("active")
+//         element.classList.add("active")
+//     })
+// });
+
 
 
 function popupIMG(){
