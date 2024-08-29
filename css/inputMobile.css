@@ -1130,3 +1130,75 @@ html{
 .nav-tabs>li>a:hover{
   background-color: transparent;
 }
+
+
+
+.newsList nav ul li {
+  position: relative;
+}
+
+.newsList nav ul li::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: rgba(243, 112, 33, 0.9529411765);
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+
+.newsList nav ul li:hover::after {
+  transform: scaleX(1);
+}
+
+.newsList nav ul li.newactiveList::after {
+  transform: scaleX(1);
+}
+
+.newsList nav ul li.newactiveList h1 ,
+.newsList nav ul li.newactiveList h2 ,
+.newsList nav ul li.newactiveList span {
+  color: #1E1E1E;
+}
+
+.newsList nav ul li.newactiveList {
+  background-color: #E4E4E7;
+}
+
+.newsList nav ul li:hover h1 ,
+.newsList nav ul li:hover h2 ,
+.newsList nav ul li:hover span {
+  color: #1E1E1E;
+}
+
+.newsList nav ul li:hover {
+  background-color: #E4E4E7;
+}
+
+
+
+.productList .external-dropdown {
+  position: relative;
+}
+.productList .external-dropdown .dropdown, .productList .external-dropdown .dropup {
+  position: static;
+}
+.productList .outer {
+  display: flex;
+  overflow-x: auto;
+}
+.productList .side:nth-child(1) .dropdown-menu , .productList .side:nth-child(2) .dropdown-menu{
+  left: unset!important;
+  right: 10px;
+}
+
+.productList .side .dropdown-menu a{
+color: #FFFFFF80!important;
+}
+.productList .side .dropdown-menu{
+  transform: translateY(-5px);
+  border: none;
+}

@@ -704,6 +704,10 @@ video {
   inset: -0.25rem;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .\!bottom-\[unset\] {
   bottom: unset !important;
 }
@@ -754,6 +758,10 @@ video {
 
 .top-0 {
   top: 0px;
+}
+
+.top-\[35\%\] {
+  top: 35%;
 }
 
 .top-\[8px\] {
@@ -1019,6 +1027,30 @@ video {
   margin-bottom: auto;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-\[2em\] {
   margin-bottom: 2em;
 }
@@ -1029,10 +1061,6 @@ video {
 
 .mb-\[4em\] {
   margin-bottom: 4em;
-}
-
-.mb-\[8em\] {
-  margin-bottom: 8em;
 }
 
 .ml-\[-1em\] {
@@ -1071,8 +1099,36 @@ video {
   margin-right: auto;
 }
 
+.mt-0\.5 {
+  margin-top: 0.125rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .mt-\[1\.2em\] {
@@ -1093,6 +1149,10 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .box-border {
@@ -1218,6 +1278,10 @@ video {
   height: 40px;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .h-\[56px\] {
   height: 56px;
 }
@@ -1232,6 +1296,10 @@ video {
 
 .h-\[60px\] {
   height: 60px;
+}
+
+.h-\[74px\] {
+  height: 74px;
 }
 
 .h-\[90\%\] {
@@ -1313,6 +1381,10 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.min-w-\[96px\] {
+  min-width: 96px;
 }
 
 .flex-shrink {
@@ -1408,6 +1480,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .\!transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
@@ -1430,6 +1507,10 @@ video {
 
 .cursor-none {
   cursor: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .touch-auto {
@@ -1706,6 +1787,10 @@ video {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-cols-\[1fr\2c 1fr\] {
   grid-template-columns: 1fr 1fr;
 }
@@ -1940,6 +2025,30 @@ video {
 
 .gap-\[3em\] {
   gap: 3em;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
+.gap-x-9 {
+  -moz-column-gap: 2.25rem;
+       column-gap: 2.25rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2486,6 +2595,16 @@ video {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
+.bg-b11 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 255 / var(--tw-bg-opacity));
+}
+
+.bg-b4 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
 .bg-b6 {
   background-color: #2E3192F3;
 }
@@ -2667,9 +2786,24 @@ video {
   padding-right: 1.5em;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-2\.5 {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-3 {
@@ -2707,6 +2841,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2725,6 +2864,11 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-8 {
@@ -3121,6 +3265,11 @@ video {
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
+.text-b12 {
+  --tw-text-opacity: 1;
+  color: rgb(188 189 189 / var(--tw-text-opacity));
+}
+
 .text-b2 {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
@@ -3148,6 +3297,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-white\/\[0\.5\] {
+  color: rgb(255 255 255 / 0.5);
 }
 
 .underline {
@@ -3484,6 +3637,10 @@ video {
 
 .delay-\[1s\] {
   transition-delay: 1s;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
 }
 
 .duration-150 {
@@ -4844,6 +5001,78 @@ html{
 
 .nav-tabs>li>a:hover{
   background-color: transparent;
+}
+
+.newsList nav ul li {
+  position: relative;
+}
+
+.newsList nav ul li::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: rgba(243, 112, 33, 0.9529411765);
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+
+.newsList nav ul li:hover::after {
+  transform: scaleX(1);
+}
+
+.newsList nav ul li.newactiveList::after {
+  transform: scaleX(1);
+}
+
+.newsList nav ul li.newactiveList h1 ,
+.newsList nav ul li.newactiveList h2 ,
+.newsList nav ul li.newactiveList span {
+  color: #1E1E1E;
+}
+
+.newsList nav ul li.newactiveList {
+  background-color: #E4E4E7;
+}
+
+.newsList nav ul li:hover h1 ,
+.newsList nav ul li:hover h2 ,
+.newsList nav ul li:hover span {
+  color: #1E1E1E;
+}
+
+.newsList nav ul li:hover {
+  background-color: #E4E4E7;
+}
+
+.productList .external-dropdown {
+  position: relative;
+}
+
+.productList .external-dropdown .dropdown, .productList .external-dropdown .dropup {
+  position: static;
+}
+
+.productList .outer {
+  display: flex;
+  overflow-x: auto;
+}
+
+.productList .side:nth-child(1) .dropdown-menu , .productList .side:nth-child(2) .dropdown-menu{
+  left: unset!important;
+  right: 10px;
+}
+
+.productList .side .dropdown-menu a{
+  color: #FFFFFF80!important;
+}
+
+.productList .side .dropdown-menu{
+  transform: translateY(-5px);
+  border: none;
 }
 
 @media (min-width: 480px) {
